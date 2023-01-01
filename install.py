@@ -9,7 +9,7 @@ def loader():
 class WS90Installer(ExtensionInstaller):
     def __init__(self):
         super(WS90Installer, self).__init__(
-            version="0.1",
+            version="0.1.1",
             name='ws90',
             description='schema updates for ws90 soil',
             author="Erudita",
