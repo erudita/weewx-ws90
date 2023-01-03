@@ -1,7 +1,9 @@
 # installer for the weewx-ws90 soil additions
 # Distributed under the terms of the GNU Public License (GPLv3)
 
+import configobj
 from weecfg.extension import ExtensionInstaller
+from six.moves import StringIO
 
 # define our config as a multiline string so we can preserve comments
 ws90_config = """
