@@ -1,4 +1,4 @@
-# weewx-ws90-soil
+# weewx-ws90
 
 This is a weewx extension to enable features of the Ecowitt ws90 to be imported into WeeWx
 
