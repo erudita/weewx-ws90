@@ -11,6 +11,8 @@ Also, use the additional soil sensors
 * rainPiezo (like rain, using the piezo sensor)
 * rainPiezoRate (like rainRate, using the piezo sensor)
 
+*Note that rainPiezo and rainPiezoRate are not tested - I use hail and hailRate*
+
 ## Change units:
 * SoilMoist to 'group_percent'
 
