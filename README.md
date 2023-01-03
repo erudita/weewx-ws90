@@ -6,11 +6,11 @@ The intent is to retain the ws90 piezo rain as a separate data set from rain.
 
 Also, use the additional soil sensors
 
-##Extend "wview_extended", adding 
+## Extend "wview_extended", adding 
 * 4 soil sensors (8 in total) soilMoist5, soilMoist6, ..
 * rainPiezo (like rain, using the piezo sensor)
 * rainPiezoRate (like rainRate, using the piezo sensor)
 
-##Change units:
+## Change units:
 * SoilMoist to 'group_percent'
 
