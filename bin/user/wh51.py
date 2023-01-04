@@ -5,6 +5,10 @@ import weewx
 import weewx.units
 from weewx.wxengine import StdService
 
+import weeutil.logger
+import logging
+log = logging.getLogger(__name__)
+
 class WH51(StdService):
     """WeeWX service for initialising data for WH51 compatibility (soil moisture as a percentage """
 
@@ -23,4 +27,4 @@ class WH51(StdService):
         weewx.units.obs_group_dict['soilMoist8'] = 'group_percent'
         
 
-        loginf("Setup WH51 obs_group")
+        log.info("Setup WH51 obs_group_dict")
