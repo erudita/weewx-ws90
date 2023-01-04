@@ -1,5 +1,6 @@
 ## The ecowitt WH51 reports moisture as a percentage
 ##
+
 import weewx
 import weewx.units
 from weewx.wxengine import StdService
