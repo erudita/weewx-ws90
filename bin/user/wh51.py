@@ -1,7 +1,8 @@
 ## The ecowitt WH51 reports moisture as a percentage
 ##
-
+import weewx
 import weewx.units
+from weewx.wxengine import StdService
 
 class WH51(StdService):
     """WeeWX service for initialising data for WH51 compatibility (soil moisture as a percentage """
