@@ -42,6 +42,7 @@ class WSInstaller(ExtensionInstaller):
             description='schema updates for ws90 and wh51 soil sensors',
             author="Erudita",
             author_email="erudita<@>ankubis.com",
+            process_services='user.ws90.WH51',
             files=[('bin/user', ['bin/user/ws90rain.py',
                                  'bin/user/wh51units.py'])
                   ]
