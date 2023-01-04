@@ -36,10 +36,13 @@ def loader():
 class WSInstaller(ExtensionInstaller):
     def __init__(self):
         super(WSInstaller, self).__init__(
-            version="0.1.3",
+            version="0.1.4",
             name='ws90',
-            description='schema updates for ws90 soil',
+            config=ws90_dict,
+            description='schema updates for ws90 and wh51 soil sensors',
             author="Erudita",
-            files=[('bin/user', ['bin/user/ws90soil.py'])],
-            config=ws90_dict
+            author_email="erudita<@>ankubis.com",
+            files=[('bin/user', ['bin/user/ws90rain.py'],
+                                 'bin/user/wh51units.py'])
+                  ]
             )
