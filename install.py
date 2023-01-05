@@ -36,7 +36,7 @@ def loader():
 class WSInstaller(ExtensionInstaller):
     def __init__(self):
         super(WSInstaller, self).__init__(
-            version="0.1.9",
+            version="0.2.0",
             name='ws90',
             config=ws90_dict,
             description='schema updates for ws90 and wh51 soil sensors',
