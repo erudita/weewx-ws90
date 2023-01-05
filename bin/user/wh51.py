@@ -27,4 +27,4 @@ class WH51(StdService):
         weewx.units.obs_group_dict['soilMoist8'] = 'group_percent'
         
 
-        log.info("Setup WH51 obs_group_dict")
+        log.debug("Setup WH51 obs_group_dict")
