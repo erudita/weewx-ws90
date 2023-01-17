@@ -8,6 +8,8 @@ Currently, this does not update the weewx database or extend the database schema
 
 *Note that rainPiezo and rainPiezoRate are not tested - I use hail and hailRate*
 
+This should be used in conjunction with an appropriate input driver or service, such as weewx-interceptor ([Fork to support the Ecowitt]( https://github.com/erudita/weewx-interceptor))
+
 ## WH51:
 * Set SoilMoist? to 'group_percent'
 * 4 additional soil sensors (8 in total) soilMoist5, soilMoist6, ..
