@@ -25,6 +25,18 @@ class WH51(StdService):
         weewx.units.obs_group_dict['soilMoist6'] = 'group_percent'
         weewx.units.obs_group_dict['soilMoist7'] = 'group_percent'
         weewx.units.obs_group_dict['soilMoist8'] = 'group_percent'
+        weewx.units.obs_group_dict['soilMoist9'] = 'group_percent'
+        weewx.units.obs_group_dict['soilMoist10'] = 'group_percent'
         
+        weewx.units.obs_group_dict['soilBatteryVoltage1'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage2'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage3'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage4'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage5'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage6'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage7'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage8'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage9'] = 'group_volt'
+        weewx.units.obs_group_dict['soilBatteryVoltage10'] = 'group_volt'
 
         log.debug("Setup WH51 obs_group_dict")
