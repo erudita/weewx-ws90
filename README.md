@@ -22,8 +22,6 @@ THis is based on using MQTT Subscribe as the weewx driver.
 
 *Currently in TEST*
 
-This should be used in conjunction with an appropriate input driver or service, such as https://github.com/bellrichm/WeeWX-MQTTSubscribe
-
 ## WH51:
 * additional soil sensors (10 in total), e.g. soilMoist5, soilMoist6, .. all being 'group_percent'
 * new - soilBatteryVoltage? (10 in total), e.g. soilBatteryVoltage3 having "group_volt"
