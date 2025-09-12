@@ -38,8 +38,7 @@ weewx.units.obs_group_dict['WH40BatteryStatus'] = 'group_volt'
 # [StdCalibrate] [[Corrections]] section
 
 weewx.units.obs_group_dict['rainPiezo'] = 'group_rain'
-weewx.units.obs_group_dict['yearRainPiezo'] = 'group_rain'
-weewx.units.obs_group_dict['rainPiezoRate'] = 'group_rain'
+weewx.units.obs_group_dict['rainPiezoRate'] = 'group_rainrate'
 weewx.units.obs_group_dict['eventRain'] = 'group_rain'
 weewx.units.obs_group_dict['eventRainPiezo'] = 'group_rain'
 
