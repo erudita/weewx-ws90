@@ -1,7 +1,7 @@
 # weewx-ws90
 
-This is a set of weews configurations to enable data provided by the Ecowitt ws90 to be imported into WeeWx.
-THis is based on using MQTT Subscribe as the weewx driver.
+Weewx setup to enable data consumption from the Ecowitt GW2000 using MQTT. WG40, WS90, and WH51 sensors are included.
+MQTT Subscribe is the weewx driver.
 
 ## Constraints
 * adding observation types for new sensors effectivly prohits use of extensions to define the types since the weewx driver will always be invoked prior to the extension.
