@@ -18,6 +18,9 @@ ENV \
     MQTTSUBSCRIBE_URL="https://github.com/bellrichm/WeeWX-MQTTSubscribe/archive/refs/tags/v${MQTTSUBSCRIBE_VERSION}.zip" \
     MQTT_URL="https://github.com/matthewwall/weewx-mqtt/archive/master.zip"
 
+LABEL org.opencontainers.image.description="MQTT version of Weewx for EcoWitt GW2000/WS90"
+LABEL org.opencontainers.image.source=https://github.com/erudita/weewx-ws90
+LABEL org.opencontainers.image.licence=GPL-3.0-or-later
 LABEL org.opencontainers.image.authors="erudita@ankubis.com" \
       com.weewx.version=${WEEWX_VERSION}
 
