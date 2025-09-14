@@ -25,12 +25,7 @@ weewx.units.obs_group_dict['irrigationVolum2'] = 'group_volume'
 #    rainPiezeoBattery - group_volt
 ## weewx.units.obs_group_dict['rainPiezoBatteryVoltage'] = 'group_volt'
 ## weewx.units.obs_group_dict['rainBatteryVoltage'] = 'group_volt'
-# rain is WH40, piezo rain, wind is WS90, option 2
-
-weewx.units.obs_group_dict['rainBatteryStatus'] = 'group_volt'
-weewx.units.obs_group_dict['hailBatteryStatus'] = 'group_volt'
-weewx.units.obs_group_dict['WS90BatteryStatus'] = 'group_volt'
-weewx.units.obs_group_dict['WH40BatteryStatus'] = 'group_volt'
+# chosen to use option 1 and change labels in weewx.conf
 
 # This configuration sets "piezo" types, which are used in the loop 
 # for clarity.
