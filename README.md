@@ -1,33 +1,19 @@
 # weewx-ws90
 
-Weewx setup to enable data consumption from the Ecowitt GW2000 using MQTT. WG40, WS90, and WH51 sensors are included.
-MQTT Subscribe is the weewx driver.
-
-## Constraints
-* adding observation types for new sensors effectivly prohits use of extensions to define the types since the weewx driver will always be invoked prior to the extension.
-* This needs to work as a Docker container.
-* Data captured via the WeeWX-MQTTSubscribe from a GW2000 using ecowitt protocol.
-* Must be compatible with non-US database (hence observation types are important)
-* Maximise backwards compatibility by reusing database fields if appropriate.
-* To use MQTT only, https://github.com/bellrichm/WeeWX-MQTTSubscribe, and https://github.com/matthewwall/weewx-mqtt
+Docker version of Weewx with some small additions to support:
+* Weewx Driver MQTTSubscribe - https://github.com/bellrichm/WeeWX-MQTTSubscribe
+* MQTT output using MQTT https://github.com/matthewwall/weewx-mqtt
+* additions to bin/user/extensions to support Ecowitt: WH40, WS90, and WH51 through the ecowitt gateway (e.g. GW2000)
 * Capture and recored from two rain devices separately (WS90 and WH40)
 
 ## How this works
-* bin/user/extensions.py - modified to include all of the new observations delivered by GGW2000 from WS90/WH51
-* MQTTSubscribe configured to present the observations, which are then copied, extracted and readyed for archive by
-* transformations defined using [StdCalibrate] and [Accumulator] sections of weewx.conf
-* All observations are presented to MQTT Service for publication
-  
-* Database hail fields are resued for piezo rain. 
+* bin/user/extensions.py - modified to include most of the new observations delivered by GW2000 from WS90/WH51
+* MQTTSubscribe configured to ingest the observations (weewx.conf)
+* MQTT configured to present the observations (weewx.conf)
+
+### Maximise backwards compatibility by reusing database fields where possible
+* Database hail fields are resued for piezo rain.
+* New definitions for soil percentage (supports the WH51)
+* Database voltage fields reused for WS90 battery and capacitor voltage, and WH40 battery voltage
 
 *Currently in TEST*
-
-## WH51:
-* additional soil sensors (10 in total), e.g. soilMoist5, soilMoist6, .. all being 'group_percent'
-* new - soilBatteryVoltage? (10 in total), e.g. soilBatteryVoltage3 having "group_volt"
-* all of the above added to database definitions
-
-## WS90piezo:
-piezo rain is is captured as rainPiezo by using the yrain_piezo field from WS2000 GW. This is cumulative yearly rain.
-various piezo rain fields are captured and defined (e.g. rainPiezo24, event rain, piezo rain rate) generally corresponding to analogue equivalent.
-Transformations are defined using [StdCalibrate] and [Accumulator] sections of weewx.conf
