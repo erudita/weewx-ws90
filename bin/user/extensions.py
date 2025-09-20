@@ -11,8 +11,8 @@ import weewx.units
 
 # for the WFC01 (irrigation).
 # I include here for convenience
-weewx.units.obs_group_dict['irrigationVolum1'] = 'group_volume'
-weewx.units.obs_group_dict['irrigationVolum2'] = 'group_volume'
+weewx.units.obs_group_dict['irrigationVolume1'] = 'group_volume'
+weewx.units.obs_group_dict['irrigationVolume2'] = 'group_volume'
 
 # units delivered by the GW2000
 
