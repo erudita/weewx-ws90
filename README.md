@@ -7,13 +7,17 @@ Docker version of Weewx with some small additions to support:
 * Capture and recored from two rain devices separately (WS90 and WH40)
 
 ## How this works
-* bin/user/extensions.py - modified to include most of the new observations delivered by GW2000 from WS90/WH51
+* bin/user/extensions.py - additions to include most of the new observations delivered by GW2000 from WS90/WH51
 * MQTTSubscribe configured to ingest the observations (weewx.conf)
 * MQTT configured to present the observations (weewx.conf)
 
 ### Maximise backwards compatibility by reusing database fields where possible
 * Database hail fields are resued for piezo rain.
-* New definitions for soil percentage (supports the WH51)
-* Database voltage fields reused for WS90 battery and capacitor voltage, and WH40 battery voltage
+* Exiting Database voltage fields reused for WS90 battery and capacitor voltage, and WH40 battery voltage
 
-*Currently in TEST*
+### Extensions.py ###
+* observation types added for soil voltage
+* observation types modified for soil percentage (supports the WH51)
+* observation types / new types for irrigationVolume<n> (WFC01)
+* observation types for rain events (erain)
+* observation types for types windDir
