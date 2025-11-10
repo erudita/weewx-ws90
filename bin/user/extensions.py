@@ -38,9 +38,11 @@ weewx.units.obs_group_dict['eventRain'] = 'group_rain'
 weewx.units.obs_group_dict['eventRainPiezo'] = 'group_rain'
 
 # some addons to be used in the loop and MQTT generation but not database
+# without these, the unit conversion will fail
 weewx.units.obs_group_dict['rain24'] = 'group_rain'
 weewx.units.obs_group_dict['rainPiezo24'] = 'group_rain'
 weewx.units.obs_group_dict['monthRainPiezo'] = 'group_rain'
+weewx.units.obs_group_dict['dayRainPiezo'] = 'group_rain'
 
 # WS 90 gives options for wind direction.
 weewx.units.obs_group_dict['windDirAvg10m'] = 'group_direction'
