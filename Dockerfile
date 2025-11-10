@@ -9,7 +9,7 @@ LABEL org.opencontainers.image.authors="erudita@ankubis.com"
 
 ARG WEEWX_UID=1001
 
-ENV WEEWX_VERSION="5.1.0" \
+ENV WEEWX_VERSION="5.2.0" \
     MQTTSUBSCRIBE_VERSION="3.0.0" \
     MQTT_VERSION="" \
     TZ="Australia/Melbourne"
@@ -21,6 +21,7 @@ ENV WEEWX_ROOT="/etc/weewx/" \
 
 
 ## MQTT interfaces: receive (bellrichim) and send (matthewwall)
+## MQTT interfaces: send (matthewwall)
 ENV \
     MQTTSUBSCRIBE_URL="https://github.com/bellrichm/WeeWX-MQTTSubscribe/archive/refs/tags/v${MQTTSUBSCRIBE_VERSION}.zip" \
     MQTT_URL="https://github.com/matthewwall/weewx-mqtt/archive/master.zip"
